@@ -1,10 +1,11 @@
 #include <iostream>
 int main(){
     int z,y,aux;
-    cin >> z >> y;
+    std:: cout << "ingresa numeros:\n"; 
+    std:: cin >> z >> y;
     aux = z;
     z = y; 
     y = aux;
-    cout << z <<y;
+    std:: cout << "los numeros son:\n"<< z << y <<"\n";
     return 0;
 }
