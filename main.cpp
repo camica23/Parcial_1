@@ -3,7 +3,6 @@ int main(){
     int sum, multi,res;
     float a,b, div; 
     std:: cout << "Solo sé que nada sé \n"; 
-    std:: cout << "Lenin es loco\n"; 
     std:: cout << "ingresa numeros: "; 
     std:: cin >> a >> b; /*>> insertar (concatena)*/
     sum = a + b; 
