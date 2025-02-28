@@ -48,6 +48,7 @@ double calcularDistanciaTotal(Point puntos[], int n)
 void leerPuntos(Point puntos[], int n)
 {
     char respuesta;
+    std::cout << "Hola! empecemos\n ";
     std::cout << "¿Desea ingresar los puntos manualmente? (s/n): ";
     std::cin >> respuesta;
 
@@ -76,16 +77,19 @@ void leerPuntos(Point puntos[], int n)
         }
     }
 }
-
 int main()
-{
+{                    /*De esta forma se determina con cuantos puntos se va a trabajar, en este caso
+                     para tener en cuenta los 4 establecidos, se pone 4
+                     */
     const int n = 4; // Número de puntos
     Point puntos[n];
 
     // Leer los puntos
     leerPuntos(puntos, n);
-
-    // Leer el punto desde el cual calcular la distancia
+    /*
+    Leer el punto desde el cual calcular la distancia, este es el punto de compración con los demás
+    para poder determinar la distancia al punto mas cercano
+    */
     Point usuario;
     std::cout << "\nIngrese las coordenadas del punto desde el que calcular la distancia (x, y): ";
     std::cin >> usuario.x >> usuario.y;
@@ -102,7 +106,8 @@ int main()
               << puntos[indiceMasCercano].y << ")\n";
     std::cout << "La distancia al punto más cercano es: " << distanciaMinima << "\n";
 
-    /*Calcular la distancia total del recorrido: lo que se quiere es sumar las distancias, recorriendo
+    /*Calcular la distancia total recorrida al seguir los puntos en orden
+    Calcular la distancia total del recorrido: lo que se quiere es sumar las distancias, recorriendo
     y comparando con el siguiente punto, el ultimo punto no tiene con que compararse por eso n-1
     */
     double distanciaTotal = calcularDistanciaTotal(puntos, n);
