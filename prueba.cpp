@@ -7,5 +7,6 @@ int main(){
     z = y; 
     y = aux;
     std:: cout << "los numeros son:\n"<< z << y <<"\n";
+    std:: cout << "height address"<< &z << "\n";
     return 0;
 }

@@ -12,7 +12,8 @@ int main(){
     std:: cout << "la suma es:\n" << sum << "\n"; /*<< extracción (concatena)*/
     std:: cout << "la resta es:\n" << res << "\n"; 
     std:: cout << "la multiplicación es:\n" << multi << "\n"; 
-    std:: cout << "la división es:\n" << div << "\n"; 
+    std:: cout << "la división es:\n" << div << "\n";
+    
     return 0;
     
 }
